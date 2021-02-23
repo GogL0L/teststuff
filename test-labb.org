@@ -1,0 +1,42 @@
+#+title: Experimento
+#+description: Här kan jag testa massor av saker
+
+* Elisp \label{stuff_med_saker_1.1_och_så_vidare}
+
+#+begin_src emacs-lisp
+(replace-regexp-in-string "[ ]" "_" "\\här står det saker")
+#+end_src
+
+#+RESULTS:
+: \här_står_det_saker
+
+\stuff
+
+stuff
+
+#+begin_src emacs-lisp
+(defun apollo/fix-label () (interactive)
+       (save-excursion
+	 (re-search-backward "\\\\label{.*}" 0 t))
+	 (replace-match (replace-regexp-in-string "[ ]" "_" (match-string 0)) nil t))
+
+#+end_src
+
+#+RESULTS:
+: apollo/fix-label
+
+#+begin_src emacs-lisp
+(save-excursion
+(re-search-backward "\\\\label{.*}" 0 t)
+(match-string 0))
+#+end_src
+
+#+RESULTS:
+: \label{.*}
+
+#+begin_src emacs-lisp
+(replace-regexp-in-string "[ ]" "_" (match-string 0))
+#+end_src
+
+#+RESULTS:
+: #+begin_src_emacs-lisp
