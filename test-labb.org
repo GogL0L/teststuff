@@ -45,6 +45,7 @@ stuff
 Lite mer på samma stash på test, och ännu mer på samma stash
 Buritos är goda.
 
-* Git relevant
+* Devel stuff
 
-** A (men den här texten finns bara på A)
+** I på devel
+
