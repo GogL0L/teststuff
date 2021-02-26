@@ -47,8 +47,4 @@ Buritos är goda.
 
 * Git relevant
 
-** A
-
-** B
-
-** C
+** A (men den här texten finns bara på A)
